@@ -1,5 +1,12 @@
-function App() { const sn = 'Flavio Cruz'
-  return (<div><h1>Welcome to Bizza Plataform, {sn} !!!</h1></div>);
+import React from 'react'
+import HomePage from './pages/HomePage/HomePage';
+
+const App = () => {
+
+  return <HomePage />
+
+
+
 }
 
-export default App;
+export default App
