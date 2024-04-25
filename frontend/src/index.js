@@ -7,12 +7,13 @@ import {
 } from 'react-router-dom';
 import './index.css'
 
-import HomePage from './pages/HomePage/HomePage'
-import AboutPage from './pages/AboutPage/AboutPage'
-import SpeakersPage from './pages/SpeakersPage/SpeakersPage'
-import EventsPage from './pages/EventsPage/EventsPage'
-import SponsorsPage from './pages/SponsorsPage/SponsorsPage'
+import HomePage from './pages/HomePage/HomePage';
+import AboutPage from './pages/AboutPage/AboutPage';
+import SpeakersPage from './pages/SpeakersPage/SpeakersPage';
+import EventsPage from './pages/EventsPage/EventsPage';
+import SponsorsPage from './pages/SponsorsPage/SponsorsPage';
 import ContactPage from './pages/ContactPage/ContactPage';
+import SignUp from './pages/Auth/SignUp';
 
 
 
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
   {
     path: "/contact",
     element: <ContactPage />,
+  },
+  {
+    path: "/auth/signup",
+    element: <SignUp />,
   },
 
 

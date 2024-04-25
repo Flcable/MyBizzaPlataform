@@ -1,10 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
+import { Link, useNavigate } from 'react-router-dom';
 const Header = () => {
+    const navigate = useNavigate();
+    const handleLoginButtonClick = () => {
+        navigate('/auth/login');
+    }
     return (
         <header className="header">
-
             <div className="logo">Bizza</div>
             <nav className="nav">  <ul>
                 <li>
@@ -15,7 +17,7 @@ const Header = () => {
                 </li>
                 <li>
                     <Link to="/speakers" className='active
-        navlink'>Speakers</Link>
+                        navlink'>Speakers</Link>
                 </li>
                 <li>
                     <Link to="/events" className='navlink'>Events</Link>
@@ -29,12 +31,13 @@ const Header = () => {
                 </li>
             </ul>
             </nav>
+
             <div className="auth">
-                <button className="btn">Login</button>
+                <button onClick={handleLoginButtonClick}
+                    className="btn">Login</button>
             </div>
 
         </header>
     );
 }
-
 export default Header;
