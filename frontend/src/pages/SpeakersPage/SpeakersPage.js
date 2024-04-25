@@ -12,7 +12,7 @@ const SpeakersPage = () => {
             <Header />
             <Breadcrumb title={"Speakers"} />
             <div className='speakers-container'>
-                <div className='section_heading'>
+                <div className='section-heading'>
                     <h1>Meet Our Speakers</h1>
                 </div>
                 <div className='card'>
