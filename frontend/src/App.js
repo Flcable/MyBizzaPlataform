@@ -1,14 +1,14 @@
 import React from "react";
-import SpeakerProfile from "./SpeakerProfile";
+import { webStacksData } from "./data/webStacksData"
+import WebStacks from "./components/WebStacks/WebStacks";
 
-function App() {
-  const sn = 'Flavio Cruz'
+const App = () => {
   return (
-    <div style={{ backgroundColor: 'gray', margin: 20, color: 'white' }}>
-      <SpeakerProfile />
-
-    </div>
+    <ul>
+      {webStacksData.map(i => (
+        <WebStacks item={i} key={i.id} />
+      ))}
+    </ul>
   );
 }
-
 export default App;
