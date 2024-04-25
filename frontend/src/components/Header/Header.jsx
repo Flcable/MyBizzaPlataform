@@ -32,6 +32,7 @@ const Header = () => {
             <div className="auth">
                 <button className="btn">Login</button>
             </div>
+
         </header>
     );
 }
