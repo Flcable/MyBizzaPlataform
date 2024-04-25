@@ -1,26 +1,23 @@
 import React from 'react';
 import SpeakersCard from '../../components/SpeakersCard/SpeakersCard';
 import speakerList from '../../data/SpeakerList';
-import Breadcrumb from '../../components/Common/Breadcrumb/Breadcrumb'
+import Breadcrumb from '../../components/Common/Breadcrumb/Breadcrumb';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 
 
 const SpeakersPage = () => {
-
     return (
         <>
             <Header />
             <Breadcrumb title={"Speakers"} />
-            <div className="speakers-container">
-                <div className="section-heading" >
+            <div className='speakers-container'>
+                <div className='section_heading'>
                     <h1>Meet Our Speakers</h1>
                 </div>
-                <div className="card">
+                <div className='card'>
                     {speakerList.map((speaker) => (
-
-                        <SpeakersCard
-                            key={speaker.id}
+                        <SpeakersCard key={speaker.id}
                             name={speaker.name}
                             jobTitle={speaker.jobTitle}
                             company={speaker.company}
@@ -28,14 +25,13 @@ const SpeakersPage = () => {
                         />
                     ))}
                 </div>
+
+
             </div>
 
             <Footer />
-
-
         </>
+
     )
-
 }
-
 export default SpeakersPage;

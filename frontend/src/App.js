@@ -1,14 +1,12 @@
-import React from "react";
-import { webStacksData } from "./data/webStacksData"
-import WebStacks from "./components/WebStacks/WebStacks";
+import React from 'react'
+import HomePage from './pages/HomePage/HomePage';
 
 const App = () => {
-  return (
-    <ul>
-      {webStacksData.map(i => (
-        <WebStacks item={i} key={i.id} />
-      ))}
-    </ul>
-  );
+
+  return <HomePage />
+
+
+
 }
-export default App;
+
+export default App
